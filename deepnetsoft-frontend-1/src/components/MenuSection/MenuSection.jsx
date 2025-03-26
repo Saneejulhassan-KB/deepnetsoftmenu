@@ -15,7 +15,7 @@ function MenuSection() {
   const fetchMenuData = async (selectedCategory) => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/menus/${selectedCategory}`
+        `https://deepnetsoft-backend-1.onrender.com/api/menus/${selectedCategory}`
       );
       console.log("Fetched Data:", response.data);
       if (response.data && response.data.headings) {
