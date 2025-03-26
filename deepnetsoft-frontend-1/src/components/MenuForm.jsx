@@ -23,7 +23,7 @@ const MenuForm = () => {
 
   const fetchCurrentMenu = async (category) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/menus/${category}`);
+      const response = await fetch(`https://deepnetsoft-backend-1.onrender.com/api/menus/${category}`);
       if (response.ok) {
         const data = await response.json();
         setCurrentMenu(data);
@@ -43,7 +43,7 @@ const MenuForm = () => {
     setSuccess("");
 
     try {
-      const response = await fetch("http://localhost:5000/api/menus/add-item", {
+      const response = await fetch("https://deepnetsoft-backend-1.onrender.com/api/menus/add-item", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
