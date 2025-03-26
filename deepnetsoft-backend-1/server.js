@@ -10,8 +10,9 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin: "https://deep-net-soft1.netlify.app", 
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: ["https://deep-net-soft1.netlify.app", "http://localhost:5173"],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 }));
 

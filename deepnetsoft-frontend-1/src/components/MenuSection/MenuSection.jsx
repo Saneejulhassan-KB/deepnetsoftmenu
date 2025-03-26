@@ -14,8 +14,16 @@ function MenuSection() {
 
   const fetchMenuData = async (selectedCategory) => {
     try {
+      console.log('Attempting to fetch from:', `https://deepnetsoftmenubackend.onrender.com/api/menus/${selectedCategory}`);
       const response = await axios.get(
-        `https://deepnetsoft-backend-1.onrender.com/api/menus/${selectedCategory}`
+        `https://deepnetsoftmenubackend.onrender.com/api/menus/${selectedCategory}`,
+        {
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          withCredentials: true
+        }
       );
       console.log("Fetched Data:", response.data);
       if (response.data && response.data.headings) {
@@ -25,6 +33,19 @@ function MenuSection() {
       }
     } catch (error) {
       console.error("Error fetching menu:", error);
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        // that falls out of the range of 2xx
+        console.error("Error response data:", error.response.data);
+        console.error("Error response status:", error.response.status);
+        console.error("Error response headers:", error.response.headers);
+      } else if (error.request) {
+        // The request was made but no response was received
+        console.error("No response received:", error.request);
+      } else {
+        // Something happened in setting up the request that triggered an Error
+        console.error("Error message:", error.message);
+      }
       setMenu([]);
     }
   };
