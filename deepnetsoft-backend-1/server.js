@@ -10,11 +10,12 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin: ["https://deep-net-soft1.netlify.app", "http://localhost:5173"],
+  origin: "*",  // Temporarily allow all origins
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true
 }));
+
 
 app.use(bodyParser.json());
 
