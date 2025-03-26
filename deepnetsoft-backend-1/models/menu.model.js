@@ -8,12 +8,12 @@ const MenuItemSchema = new mongoose.Schema({
 
 const MenuHeadingSchema = new mongoose.Schema({
   title: { type: String, required: true },
-  items: [MenuItemSchema], // Each heading has multiple items
+  items: [MenuItemSchema], 
 });
 
 const MenuSchema = new mongoose.Schema({
   category: { type: String, required: true },
-  headings: [MenuHeadingSchema], // Each category has multiple headings
+  headings: [MenuHeadingSchema], 
 });
 
 module.exports = mongoose.model("Menu", MenuSchema);

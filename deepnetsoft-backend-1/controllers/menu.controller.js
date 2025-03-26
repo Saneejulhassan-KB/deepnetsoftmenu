@@ -14,7 +14,7 @@ exports.addMenuItem = async (req, res) => {
       return res.status(400).json({ message: "Price must be a positive number." });
     }
 
-    // Convert category, heading, and name to lowercase for uniformity
+    
     category = category.toLowerCase();
     heading = heading.toLowerCase();
     name = name.toLowerCase();
@@ -28,7 +28,7 @@ exports.addMenuItem = async (req, res) => {
       });
     }
 
-    // Find heading (case insensitive)
+    
     let menuHeading = menu.headings.find(h => h.title.toLowerCase() === heading);
 
     if (!menuHeading) {
@@ -36,7 +36,7 @@ exports.addMenuItem = async (req, res) => {
       menuHeading = menu.headings[menu.headings.length - 1];
     }
 
-    // Check if item exists under the same heading (case insensitive)
+    
     const existingItem = menuHeading.items.find(item => item.name.toLowerCase() === name);
     if (existingItem) {
       return res.status(400).json({ 
@@ -44,10 +44,10 @@ exports.addMenuItem = async (req, res) => {
       });
     }
 
-    // Add new menu item
+    
     menuHeading.items.push({ name, description, price });
 
-    // Save updated menu
+    
     const savedMenu = await menu.save();
 
     res.status(201).json({
