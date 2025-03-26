@@ -1,0 +1,76 @@
+.menu-section {
+    position: relative;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    height: 311px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background-image: url('/titleimage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.menu-title {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 75px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+    z-index: 1;
+    text-shadow: 4px 3px 0px #800020;
+}
+
+.menu-description {
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #ddd;
+    z-index: 1;
+    margin-top: 10px;
+    color:  #BBBBBB;
+}
+
+@media (max-width: 768px) {
+    .menu-title {
+        font-family: "Oswald", sans-serif;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 3%;
+        text-align: center;
+        text-shadow: 3px 2px 0px #800020;
+    }
+
+    .menu-description {
+        font-size: 16px;
+        top: auto;
+        left: 0;
+        right: 0;
+        position: relative;
+        margin-top: 10px;
+    }
+
+    .menu-section {
+        height: 231px;
+        margin-top: 0;
+        background-image: url('/titleimagemobile.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        min-height: 231px;
+    }
+}

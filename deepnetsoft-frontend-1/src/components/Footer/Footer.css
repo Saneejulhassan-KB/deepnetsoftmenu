@@ -1,0 +1,224 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding-top: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 70px;
+}
+
+.section-box {
+    width: 373px;
+    height: 134px;
+    border-radius: 15px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.logo-section-box {
+    position: relative;
+}
+
+.section-box p {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: #857878;
+}
+
+.footer-box {
+    text-align: center;
+    padding: 15px;
+}
+
+.footer-title {
+    color: #008cff;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: Oswald;
+    line-height: 100%;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+}
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 125px;
+}
+
+.logo {
+    width: 86px;
+    height: 76px;
+    border-radius: 5px;
+}
+
+.brand-name {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    position: absolute;
+    top: 50px;
+}
+
+.deep {
+    color: #008cff;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 3%;
+}
+
+.net {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: white;
+}
+
+.soft {
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: #857878;
+}
+
+.social-icons {
+    position: absolute;
+    top: 90px;
+    width: 86px;
+    height: 12.6px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #161616;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 14px;
+    color: #857878;
+    height: 45px;
+}
+
+.copyright {
+    margin: 0;
+    font-weight: 400;
+    margin-left: 150px;
+}
+
+.footer-links {
+    margin-right: 150px;
+}
+
+.footer-links a {
+    margin-left: 15px;
+    text-decoration: none !important;
+    font-weight: 400;
+}
+
+.footer-links a:hover {
+    text-decoration: none !important;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .footer {
+        padding-bottom: 150px;
+    }
+
+    .footer-box {
+        text-align: center;
+    }
+
+    .section-box {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .logo {
+        width: 74;
+        height: 66;
+    }
+
+    .brand-name {
+        font-size: 30px;
+        position: absolute;
+        top: 45px;
+    }
+
+    .deep {
+        font-size: 30px;
+    }
+
+    .net {
+        font-size: 30px;
+    }
+
+    .soft {
+        font-size: 30px;
+    }
+
+    .social-icons {
+        position: absolute;
+        top: 75px;
+        width: 83.91px;
+        height: 13.05px;
+    }
+
+    .logo-section-box {
+        padding-bottom: 100px;
+    }
+
+    .bottom {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-top: 5px;
+        margin-right: 0;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .copyright {
+        margin-left: 0;
+    }
+
+}

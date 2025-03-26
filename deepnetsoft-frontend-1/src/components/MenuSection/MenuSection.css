@@ -1,0 +1,249 @@
+.menu-section-title {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.desktop-image {
+    display: block;
+}
+
+.mobile-image {
+    display: none;
+}
+
+.centered-container {
+    position: absolute;
+    width: 80%;
+    max-width: 1140px;
+    height: auto;
+    min-height: 416px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+}
+
+.menu-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 60px;
+}
+
+.menu-item {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.item-name {
+    display: inline-block;
+    font-family: Oswald;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+.dotted-line {
+    flex-grow: 1;
+    border-bottom: 2px dotted #fff;
+    margin: 0 10px;
+    height: 1px;
+}
+
+.item-desc {
+    color: #FFFFFFBF;
+    font-family: Kelly Slab;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    opacity: 60%;
+    text-align: justify;
+}
+
+.drink-image {
+    position: absolute;
+    top: 0px;
+    left: 140px;
+    height: 281px;
+    width: 190px;
+    z-index: 1;
+}
+
+.cocktail-image {
+    position: absolute;
+    bottom: 115px;
+    right: 190px;
+    height: 207px;
+    width: 192px;
+    z-index: 1;
+}
+
+
+.menu-frame-left,
+.menu-frame-right {
+    position: absolute;
+    top: 60px;
+    z-index: 1;
+}
+
+.menu-frame-left {
+    left: 0;
+}
+
+.menu-frame-right {
+    right: 0;
+}
+
+.section-title {
+    font-family: Oswald;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    color: #FFFFFF;
+    text-shadow: 4px 3px 0px #800020;
+}
+
+.section-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    margin-top: 40px !important;
+}
+
+.line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #fff;
+    opacity: 0.7;
+    max-width: 68px;
+    border: 3px solid #857878
+}
+
+
+@media (max-width: 768px) {
+    .desktop-image {
+        display: none;
+    }
+
+    .mobile-image {
+        display: block;
+    }
+
+    .centered-container {
+        width: 90%;
+        height: 446px;
+        min-height: 200px;
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+        color: #FFFFFF;
+        text-shadow: 4px 3px 0px #800020;
+        max-width: 140px;
+    }
+
+    .line {
+        flex-grow: 1;
+        height: 2px;
+        background-color: #fff;
+        opacity: 0.7;
+        max-width: 50px;
+        border: 1.5px solid #857878
+    }
+
+    .section-title-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+        margin-top: 50px !important;
+    }
+
+    .menu-content {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-content {
+        width: 100%;
+        display: grid;
+        gap: 10px;
+    }
+
+    .menu-item {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: -30px;
+    }
+
+    .item-name {
+        font-size: 16px;
+    }
+
+    .item-desc {
+        font-size: 14px;
+    }
+
+    .drink-image {
+        top: 0;
+        left: 20px;
+        height: 111px;
+        width: 76px;
+    }
+
+    .cocktail-image {
+        bottom: 20px;
+        right: 20px;
+        height: 81px;
+        width: 74px;
+    }
+
+    .menu-frame-left,
+    .menu-frame-right {
+        display: none;
+    }
+
+    .item-name,
+    .item-price {
+        font-size: 1.2rem;
+    }
+
+    .item-desc {
+        font-size: 0.8rem;
+    }
+}
