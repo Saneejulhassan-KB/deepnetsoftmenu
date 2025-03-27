@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./MenuSection.css";
 import Button from "react-bootstrap/Button";
-import "../Option/Option.css";
+import "../option/Option.css";
 import axios from "axios";
 
 function MenuSection() {
